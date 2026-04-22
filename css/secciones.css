@@ -1,0 +1,9 @@
+/* SECCIONES */
+section {
+  margin: 40px auto;
+  padding: 25px;
+  max-width: 900px;
+  background: var(--clr-card);
+  border-radius: var(--radius);
+  border: 1px solid var(--clr-border);
+}

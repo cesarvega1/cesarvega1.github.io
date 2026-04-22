@@ -1,0 +1,11 @@
+/* header */
+/* NAVBAR */
+#navbar {
+  position: relative;
+  padding: 15px 20px;
+  background-color: blue;
+  border-radius: 60px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border: 0.5px solid #ccc;
+}

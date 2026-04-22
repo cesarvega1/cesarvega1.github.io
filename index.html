@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI PORTAFOLIO</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/748620dc2f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav id="navbar">
+            <ul class="nav-logo">PORTA<span>FOLIO</span></ul>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="mascotas.html">Mascotas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <p class="hero-label reveal">Desarrollador Web</p>
+            <h1 class="hero-title reveal">Hola, soy<br /><span class="highlight"> Cesar Vega </span></h1>
+            <p class="hero-desc reveal" id="heroParagraph">Creo experiencias digitales únicas con código limpio y diseño
+                intencional.</p>
+            <div class="hero-btns reveal">
+                <a href="#proyectos" class="btn-secondary">Mis proyectos →</a>
+            </div>
+            <div id="extraContent" class="extra-content hidden">
+                <p>🚀 Apasionado por el desarrollo frontend, el diseño responsivo y la experiencia de usuario. Siempre
+                    aprendiendo, siempre construyendo.</p>
+            </div>
+        </div>
+        <div class="hero-deco">
+            <div class="circle c1"></div>
+            <div class="circle c2"></div>
+            <div class="circle c3"></div>
+        </div>
+    </section>
+
+    <!-- BIENVENIDA -->
+    <div id="welcomeMsg" class="welcome-banner hidden">
+        <span>👋 ¡Bienvenido/a a mi portafolio! Gracias por visitar.</span>
+        <button onclick="closeWelcome()">✕</button>
+    </div>
+
+    <!-- SOBRE MI -->
+    <section id="sobre">
+        <div class="section-header">
+            <span class="section-tag">A que me dedico</span>
+            <h2>Sobre <em>mi</em></h2>
+            <p>sfkanfknaknfknfknkfafnanfknfkanfknkfan</p>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="section proyectos-section">
+        <div class="section-header">
+            <span class="section-tag">Trabajo</span>
+            <h2>Proyectos <em>Destacados</em></h2>
+        </div>
+        <div class="proyectos-grid">
+            <div class="proyecto-card">
+                <div class="card-number">01</div>
+                <div class="card-icon">🛒</div>
+                <h3>E-Commerce App</h3>
+                <p>Tienda online con carrito de compras, filtros y pasarela de pago integrada.</p>
+                <span class="tag">React</span><span class="tag">Node.js</span>
+            </div>
+            <div class="proyecto-card featured">
+                <div class="card-number">02</div>
+                <div class="card-icon">📊</div>
+                <h3>Dashboard Analytics</h3>
+                <p>Panel de control con gráficas en tiempo real, reportes exportables y autenticación.</p>
+                <span class="tag">Vue</span><span class="tag">D3.js</span>
+            </div>
+            <div class="proyecto-card">
+                <div class="card-number">03</div>
+                <div class="card-icon">🎨</div>
+                <h3>Design System</h3>
+                <p>Biblioteca de componentes reutilizables con documentación interactiva.</p>
+                <span class="tag">CSS</span><span class="tag">Figma</span>
+            </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="section galeria-section">
+        <div class="section-header">
+            <span class="section-tag">Imágenes</span>
+            <h2>Mi <em>Galería</em></h2>
+        </div>
+        <div class="galeria-grid">
+            <div class="galeria-item">
+                <img src="https://picsum.photos/seed/port1/600/400" alt="Proyecto UI" loading="lazy" />
+                <div class="galeria-overlay"><span>UI Design</span></div>
+            </div>
+            <div class="galeria-item">
+                <img src="https://picsum.photos/seed/port2/600/400" alt="Proyecto Web" loading="lazy" />
+                <div class="galeria-overlay"><span>Web App</span></div>
+            </div>
+            <div class="galeria-item">
+                <img src="https://picsum.photos/seed/port3/600/400" alt="Proyecto Mobile" loading="lazy" />
+                <div class="galeria-overlay"><span>Mobile</span></div>
+            </div>
+            <div class="galeria-item">
+                <img src="https://picsum.photos/seed/port4/600/400" alt="Branding" loading="lazy" />
+                <div class="galeria-overlay"><span>Branding</span></div>
+            </div>
+            <div class="galeria-item">
+                <img src="https://picsum.photos/seed/port5/600/400" alt="Dashboard" loading="lazy" />
+                <div class="galeria-overlay"><span>Dashboard</span></div>
+            </div>
+            <div class="galeria-item">
+                <img src="https://picsum.photos/seed/port6/600/400" alt="E-Commerce" loading="lazy" />
+                <div class="galeria-overlay"><span>E-Commerce</span></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- EXPERIENCIA -->
+    <section id="experiencia">
+        <div class="section-header">
+            <h2>Experiencia<em> Laboral</em></h2>
+          
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section contacto-section">
+        <div class="section-header">
+            <span class="section-tag">Hablemos</span>
+            <h2>¿Trabajamos <em>Juntos?</em></h2>
+        </div>
+        <div class="contacto-inner">
+            <p class="contacto-desc">Estoy disponible para proyectos de desarrollo y colaboraciones creativas.</p>
+            <div class="contacto-links">
+                <a href="cesarvegamrales@gmail.com" class="contacto-btn">📧 Enviar mensaje al correo</a>
+                <a href="https://github.com/cesarvega1" class="contacto-btn">🐙 GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <a href="" target="_blank">
+        </a>
+        <a href="https://x.com/cesarvegamrales" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/cesar_jvm" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <p>© CesarJvm</p>
+
+
+</body>
+
+</html>

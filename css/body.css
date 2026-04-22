@@ -1,0 +1,42 @@
+/* BODY */
+body{
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  text-align: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* BOTÓN */
+#menu-toggle{
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+
+    #menu-toggle{
+        display: block;
+    }
+
+    .nav-links{
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #111;
+        width: 220px;
+        flex-direction: column;
+        display: none;
+        padding: 15px;
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+}
