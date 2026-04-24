@@ -1,43 +1,40 @@
-```md
-# 🌐 Portafolio Web — César Vega
+# 🌐 Web Portfolio — César Vega
 
-Bienvenido a mi portafolio web, donde presento mis proyectos, habilidades y una sección personal de mis mascotas 🐾.
-
----
-
-## 🚀 Descripción
-
-Este proyecto es un sitio web responsive desarrollado con tecnologías web básicas, enfocado en mostrar:
-
-- 💻 Proyectos destacados
-- 🖼️ Galería visual
-- 📬 Información de contacto
-- 🐕 Sección de mascotas (página adicional)
+Welcome to my web portfolio, where I showcase my projects, skills, and a personal section dedicated to my pets 🐾.
 
 ---
 
-## 🧩 Estructura del Proyecto
+## 🚀 Description
 
-```
+This project is a responsive website developed using core web technologies, focused on displaying:
 
-📁 proyecto/
+- 💻 Featured projects
+- 🖼️ Visual gallery
+- 📬 Contact information
+- 🐕 Pets section (additional page)
+
+---
+
+## 🧩 Project Structure
+
+```text
+📁 project/
 │
-├── index.html        # Página principal (Portafolio)
-├── mascotas.html     # Página secundaria (Mascotas)
+├── index.html        # Main page (Portfolio)
+├── mascotas.html     # Secondary page (Pets)
 │
 ├── css/
-│   └── index.css     # Estilos del sitio
+│   └── index.css     # Site styling
 │
 ├── js/
-│   └── script.js     # Funcionalidad (menú, interacción)
+│   └── script.js     # Functionality (menu, interaction)
 │
-└── README.md         # Documentación del proyecto
-
+└── README.md         # Project documentation
 ```
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Technologies Used
 
 - HTML5
 - CSS3 (Flexbox + Grid)
@@ -47,72 +44,67 @@ Este proyecto es un sitio web responsive desarrollado con tecnologías web bási
 
 ---
 
-## 🎯 Funcionalidades
+## 🎯 Features
 
-### 🔹 Página Principal (`index.html`)
-- Navbar responsive con menú hamburguesa
-- Sección Hero (presentación)
-- Sección "Sobre mí"
-- Proyectos destacados
-- Galería interactiva
-- Sección de contacto
-- Footer con redes sociales
+### 🔹 Main Page (`index.html`)
+- Responsive Navbar with hamburger menu
+- Hero Section (introduction)
+- "About Me" section
+- Featured projects
+- Interactive gallery
+- Contact section
+- Footer with social media links
 
-### 🔹 Página Mascotas (`mascotas.html`)
-- Grid de tarjetas (cards)
-- Diseño responsive (2 columnas en móvil)
-- Uso de emojis como iconos
-- Estilo visual moderno
+### 🔹 Pets Page (`mascotas.html`)
+- Card grid layout
+- Responsive design (2 columns on mobile)
+- Emoji-based icons
+- Modern visual style
 
 ---
 
-## 📱 Responsive
+## 📱 Responsive Design
 
-El sitio está optimizado para:
+The site is optimized for:
 
-- 📱 Celulares
+- 📱 Mobile
 - 📲 Tablets
-- 💻 Escritorio
+- 💻 Desktop
 
 ---
 
-## ⚙️ Funcionalidades JS
+## ⚙️ JS Functionalities
 
-- Menú hamburguesa (abrir/cerrar)
-- Mostrar/ocultar contenido adicional
-- Banner de bienvenida
+- Hamburger menu (toggle open/close)
+- Show/hide additional content
+- Welcome banner
 
 ---
 
-## 📸 Vista previa
+## 📸 Preview
 
-Puedes ver el proyecto abriendo el archivo:
+You can view the project by opening the file:
 
-```
-
+```text
 index.html
-
 ```
 
 ---
 
-## 📬 Contacto
+## 📬 Contact
 
 - 📧 Email: cesarvegamrales@gmail.com  
 - 🐙 GitHub: https://github.com/cesarvega1  
 
 ---
 
-## 📄 Licencia
+## 📄 License
 
-Este proyecto es de uso personal y educativo.
+This project is for personal and educational use.
 
 ---
 
-## ✨ Autor
+## ✨ Author
 
 **César Vega Morales**  
-Desarrollador Web en formación 🚀
-```
-
-
+Web Developer in training 🚀
