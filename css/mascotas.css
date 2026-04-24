@@ -1,0 +1,28 @@
+/* GRID */
+.mascotas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 20px;
+}
+
+/* TARJETAS */
+.mascota-card {
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+    background: #16161f;
+    border: 1px solid #2a2a38;
+    transition: transform 0.3s ease;
+}
+
+/* HOVER */
+.mascota-card:hover {
+    transform: translateY(-8px);
+}
+
+/* EMOJIS */
+.mascota-emoji {
+    font-size: 50px;
+    display: block;
+    margin-bottom: 15px;
+}

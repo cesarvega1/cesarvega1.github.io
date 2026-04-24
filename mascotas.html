@@ -1,56 +1,141 @@
+```html
 <!DOCTYPE html>
+<!-- Indica que usamos HTML5 -->
+
 <html lang="es">
+<!-- Idioma del documento -->
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Configuración de la página -->
+
+  <meta charset="UTF-8" />
+  <!-- Permite usar caracteres especiales -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Hace que el sitio sea responsive -->
+
   <title>Mis Mascotas — Portafolio</title>
-  <link rel="stylesheet" href="css/index.css"/>
+  <!-- Título en la pestaña -->
+
+  <link rel="stylesheet" href="css/index.css" />
+  <!-- Conexión con el archivo CSS -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <!-- Optimiza carga de fuentes -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans&display=swap"
+    rel="stylesheet">
+  <!-- Importa tipografías -->
 </head>
+
 <body>
-  <nav id="navbar">
-    <div class="nav-logo"><a href="index.html">PORT<span>FOLIO</span></a></div>
-    <ul class="nav-links">
-      <li><a href="index.html#inicio">Inicio</a></li>
-      <li><a href="index.html#proyectos">Proyectos</a></li>
-      <li><a href="index.html#galeria">Galería</a></li>
-      <li><a href="mascotas.html" style="color:var(--clr-accent)">Mascotas</a></li>
-      <li><a href="index.html#contacto">Contacto</a></li>
-    </ul>
+
+  <!-- ================= NAVBAR ================= -->
+  <header id="navbar">
+    <!-- Contenedor del menú -->
+
+    <h1 class="nav-logo">
+      <!-- Logo del sitio -->
+      <a href="index.html">PORT<span>FOLIO</span></a>
+    </h1>
+
+    <nav>
+      <!-- Navegación principal -->
+      <ul class="nav-links">
+        <!-- Lista de enlaces -->
+
+        <li><a href="index.html#inicio">Inicio</a></li>
+        <li><a href="index.html#proyectos">Proyectos</a></li>
+        <li><a href="index.html#galeria">Galería</a></li>
+
+        <!-- Página actual destacada -->
+        <li><a href="mascotas.html" style="color:var(--clr-accent)">Mascotas</a></li>
+
+        <li><a href="index.html#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Botón hamburguesa (solo visible en móvil con CSS) -->
     <button class="menu-toggle" id="menuToggle" aria-label="Menú">
       <span></span><span></span><span></span>
+      <!-- Cada span es una línea del icono -->
     </button>
-  </nav>
+  </header>
 
-  <section class="section" style="padding-top:9rem">
-    <div class="section-header">
+  <!-- ================= CONTENIDO PRINCIPAL ================= -->
+  <main>
+
+    <section class="section" style="padding-top:9rem">
+      <!-- Sección principal -->
+
+      <header class="section-header">
+        <!-- Encabezado -->
         <h2>Mis <em>Mascotas</em></h2>
-    </div>
-    <div class="mascotas-grid">
-      <div class="mascota-card">
-        <div class="mascota-emoji">🐕</div>
-        <h3>Bush</h3>
-        <p>Labrador tiene mas de 3 años. Le encanta correr en el parque y buscar pelotas. Su snack favorito: las galletas de mantequilla de maní.</p>
-      </div>
-      <div class="mascota-card">
-        <div class="mascota-emoji">🐈</div>
-        <h3>Luna</h3>
-        <p>Gata siamesa de 5 años. Adora dormir en los lugares más cálidos y ronronear cuando la acarician. Muy inteligente y cariñosa.</p>
-      </div>
-      <div class="mascota-card">
-        <div class="mascota-emoji">🐇</div>
-        <h3>Buni</h3>
-        <p>Conejo enano de 1 año. Explorador nato y muy curioso. Le encantan las zanahorias y los juguetes con ruido.</p>
-      </div>
-    </div>
-    
-  </section>
+      </header>
 
+      <!-- GRID DE TARJETAS -->
+      <section class="mascotas-grid">
+
+        <!-- TARJETA 1 -->
+        <article class="mascota-card">
+          <span class="mascota-emoji">🐕</span>
+          <h3>Bush</h3>
+          <p>Labrador tiene mas de 3 años.</p>
+        </article>
+
+        <!-- TARJETA 2 -->
+        <article class="mascota-card">
+          <span class="mascota-emoji">🐈</span>
+          <h3>Luna</h3>
+          <p>Gata siamesa de 5 años.</p>
+        </article>
+
+        <!-- TARJETA 3 -->
+        <article class="mascota-card">
+          <span class="mascota-emoji">🐇</span>
+          <h3>Buni</h3>
+          <p>Conejo enano de 1 año.</p>
+        </article>
+
+        <!-- TARJETA 4 -->
+        <article class="mascota-card">
+          <span class="mascota-emoji">🦊</span>
+          <h3>Blaze</h3>
+          <p>Zorro cariñoso.</p>
+        </article>
+
+        <!-- TARJETA 5 -->
+        <article class="mascota-card">
+          <span class="mascota-emoji">🦥</span>
+          <h3>Oso perezoso</h3>
+          <p>Oso en modo descanso.</p>
+        </article>
+
+        <!-- TARJETA 6 -->
+        <article class="mascota-card">
+          <span class="mascota-emoji">🦦</span>
+          <h3>Nutria</h3>
+          <p>Mamífero acuático.</p>
+        </article>
+
+      </section>
+
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
   <footer class="footer">
-    <p>© CesarJvm · <a href="index.html" style="color:var(--clr-accent)">Volver al inicio</a></p>
+    <p>
+      © CesarJvm · 
+      <a href="index.html" style="color:var(--clr-accent)">Volver al inicio</a>
+    </p>
   </footer>
 
- 
+  <!-- ================= JAVASCRIPT ================= -->
+  <script defer src="js/script.js"></script>
+  <!-- Script del menú hamburguesa -->
+
 </body>
 </html>
+```

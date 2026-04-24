@@ -1,22 +1,42 @@
+```html
 <!DOCTYPE html>
+<!-- Define el tipo de documento como HTML5 -->
+
 <html lang="es">
+<!-- Idioma del sitio -->
 
 <head>
+    <!-- Configuración general -->
+
     <meta charset="UTF-8">
+    <!-- Permite usar tildes y caracteres especiales -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que el diseño sea responsive -->
+
     <title>MI PORTAFOLIO</title>
+    <!-- Título de la pestaña -->
+
     <link rel="stylesheet" href="css/index.css">
+    <!-- Conexión con el CSS -->
+
     <script src="https://kit.fontawesome.com/748620dc2f.js" crossorigin="anonymous"></script>
+    <!-- Librería de iconos (Font Awesome) -->
+
     <script defer src="js/script.js"></script>
+    <!-- Archivo JS (se ejecuta después de cargar el HTML) -->
 </head>
 
 <body>
 
-    <!-- HEADER -->
+    <!-- ================= HEADER / NAVBAR ================= -->
     <header>
         <nav id="navbar">
+
+            <!-- Logo -->
             <h2 class="nav-logo">PORTA<span>FOLIO</span></h2>
 
+            <!-- Menú de navegación -->
             <ul class="nav-links" id="navLinks">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
@@ -25,19 +45,25 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
 
+            <!-- Botón hamburguesa (solo visible en móvil) -->
             <button class="menu-toggle" id="menuToggle" aria-label="Menú">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
+
         </nav>
     </header>
 
-    <!-- HERO -->
+    <!-- ================= HERO (PORTADA) ================= -->
     <section id="inicio" class="hero">
+
+        <!-- Fondo decorativo -->
         <div class="hero-bg"></div>
 
+        <!-- Contenido principal -->
         <div class="hero-content">
+
             <p class="hero-label reveal">Desarrollador Web</p>
 
             <h1 class="hero-title reveal">
@@ -48,14 +74,19 @@
             <p class="hero-desc reveal">
                 Creo experiencias digitales únicas con código limpio y diseño intencional.
             </p>
-            <button class="btn-primary" id="toggleBtn" onclick="toggleContent()">Ver más sobre mí</button>
+
+            <!-- Botón que muestra más información -->
+            <button class="btn-primary" id="toggleBtn" onclick="toggleContent()">
+                Ver más sobre mí
             </button>
+
+            <!-- Contenido oculto -->
             <div id="extraContent" class="extra-content hidden">
-                <p>🚀 Apasionado por el desarrollo frontend, el diseño responsivo y la experiencia de usuario. Siempre
-                    aprendiendo, siempre construyendo.</p>
+                <p>🚀 Apasionado por el desarrollo frontend...</p>
             </div>
         </div>
 
+        <!-- Elementos decorativos -->
         <div class="hero-deco">
             <div class="circle c1"></div>
             <div class="circle c2"></div>
@@ -63,71 +94,90 @@
         </div>
     </section>
 
-    <!-- BIENVENIDA -->
+    <!-- ================= MENSAJE DE BIENVENIDA ================= -->
     <div id="welcomeMsg" class="welcome-banner hidden">
-        <span>👋 ¡Bienvenido/a a mi portafolio! Gracias por visitar.</span>
+        <span>👋 ¡Bienvenido/a a mi portafolio!</span>
         <button onclick="closeWelcome()">✕</button>
+        <!-- Botón que cierra el mensaje -->
     </div>
 
-    <!-- SOBRE MI -->
+    <!-- ================= SOBRE MI ================= -->
     <section id="sobre" class="section">
         <div class="section-header">
+
             <span class="section-tag">A que me dedico</span>
+
             <h2>Sobre <em>mí</em></h2>
-            <p>Desarrollador web enfocado en frontend, diseño responsivo y experiencia de usuario.</p>
+
+            <p class="contacto-desc">
+                Soy César Vega Morales, desarrollador web en formación...
+            </p>
+
         </div>
     </section>
 
-    <!-- PROYECTOS -->
+    <!-- ================= PROYECTOS ================= -->
     <section id="proyectos" class="section proyectos-section">
+
         <div class="section-header">
             <span class="section-tag">Trabajo</span>
             <h2>Proyectos <em>Destacados</em></h2>
         </div>
 
+        <!-- Grid de proyectos -->
         <div class="proyectos-grid">
+
+            <!-- Proyecto 1 -->
             <div class="proyecto-card">
                 <div class="card-number">01</div>
                 <div class="card-icon">🛒</div>
                 <h3>E-Commerce App</h3>
-                <p>Tienda online con carrito de compras, filtros y pasarela de pago integrada.</p>
+                <p>Tienda online...</p>
                 <span class="tag">React</span>
                 <span class="tag">Node.js</span>
             </div>
 
+            <!-- Proyecto destacado -->
             <div class="proyecto-card featured">
                 <div class="card-number">02</div>
                 <div class="card-icon">📊</div>
                 <h3>Dashboard Analytics</h3>
-                <p>Panel de control con gráficas en tiempo real.</p>
+                <p>Panel con gráficas en tiempo real.</p>
                 <span class="tag">Vue</span>
                 <span class="tag">D3.js</span>
             </div>
 
+            <!-- Proyecto 3 -->
             <div class="proyecto-card">
                 <div class="card-number">03</div>
                 <div class="card-icon">🎨</div>
                 <h3>Design System</h3>
-                <p>Biblioteca de componentes reutilizables.</p>
+                <p>Componentes reutilizables.</p>
                 <span class="tag">CSS</span>
                 <span class="tag">Figma</span>
             </div>
+
         </div>
     </section>
 
-    <!-- GALERÍA -->
+    <!-- ================= GALERÍA ================= -->
     <section id="galeria" class="section galeria-section">
+
         <div class="section-header">
             <span class="section-tag">Imágenes</span>
             <h2>Mi <em>Galería</em></h2>
         </div>
 
+        <!-- Grid de imágenes -->
         <div class="galeria-grid">
+
+            <!-- Cada item es una imagen -->
             <div class="galeria-item">
                 <img src="https://picsum.photos/seed/port1/600/400" alt="Proyecto UI">
                 <div class="galeria-overlay"><span>UI Design</span></div>
             </div>
 
+            <!-- Repetición de imágenes -->
             <div class="galeria-item">
                 <img src="https://picsum.photos/seed/port2/600/400" alt="Proyecto Web">
                 <div class="galeria-overlay"><span>Web App</span></div>
@@ -152,27 +202,27 @@
                 <img src="https://picsum.photos/seed/port6/600/400" alt="E-Commerce">
                 <div class="galeria-overlay"><span>E-Commerce</span></div>
             </div>
+
         </div>
     </section>
 
-    <!-- EXPERIENCIA -->
-    <section id="experiencia" class="section">
-        <div class="section-header">
-            <h2>Experiencia <em>Laboral</em></h2>
-        </div>
-    </section>
-
-    <!-- CONTACTO -->
+    <!-- ================= CONTACTO ================= -->
     <section id="contacto" class="section contacto-section">
+
         <div class="section-header">
             <span class="section-tag">Hablemos</span>
             <h2>¿Trabajamos <em>Juntos?</em></h2>
         </div>
 
         <div class="contacto-inner">
-            <p class="contacto-desc">Estoy disponible para proyectos y colaboraciones.</p>
 
+            <p class="contacto-desc">
+                Estoy disponible para proyectos.
+            </p>
+
+            <!-- Botones de contacto -->
             <div class="contacto-links">
+
                 <a href="mailto:cesarvegamrales@gmail.com" class="contacto-btn">
                     📧 Enviar mensaje
                 </a>
@@ -180,12 +230,15 @@
                 <a href="https://github.com/cesarvega1" target="_blank" class="contacto-btn">
                     🐙 GitHub
                 </a>
+
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ================= FOOTER ================= -->
     <footer>
+
+        <!-- Redes sociales -->
         <a href="https://x.com/cesarvegamrales" target="_blank">
             <i class="fab fa-twitter"></i>
         </a>
@@ -202,5 +255,5 @@
     </footer>
 
 </body>
-
 </html>
+

@@ -24,6 +24,14 @@ function toggleContent() {
         btn.style.color = '#0a0a0f';
     }
 }
+// Seleccionar elementos
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.querySelector(".nav-links");
+
+// Evento click
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
 
 
 
