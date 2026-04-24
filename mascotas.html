@@ -1,121 +1,113 @@
-```html
 <!DOCTYPE html>
-<!-- Indica que usamos HTML5 -->
+<!-- Indicates that we are using HTML5 -->
 
-<html lang="es">
-<!-- Idioma del documento -->
+<html lang="en">
+<!-- Document language -->
 
 <head>
-  <!-- Configuración de la página -->
 
   <meta charset="UTF-8" />
-  <!-- Permite usar caracteres especiales -->
+  <!-- Allows special characters -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Hace que el sitio sea responsive -->
+  <!-- Makes the site responsive -->
 
-  <title>Mis Mascotas — Portafolio</title>
-  <!-- Título en la pestaña -->
+  <title>My Pets — Portfolio</title>
+  <!-- Tab title -->
 
   <link rel="stylesheet" href="css/index.css" />
-  <!-- Conexión con el archivo CSS -->
+  <!-- CSS file connection -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <!-- Optimiza carga de fuentes -->
+  <!-- Optimizes font loading -->
 
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans&display=swap"
     rel="stylesheet">
-  <!-- Importa tipografías -->
+  <!-- Imports fonts -->
 </head>
 
 <body>
 
   <!-- ================= NAVBAR ================= -->
   <header id="navbar">
-    <!-- Contenedor del menú -->
+    <!-- Menu container -->
 
     <h1 class="nav-logo">
-      <!-- Logo del sitio -->
+      <!-- Site logo -->
       <a href="index.html">PORT<span>FOLIO</span></a>
     </h1>
 
     <nav>
-      <!-- Navegación principal -->
+      <!-- Main navigation -->
       <ul class="nav-links">
-        <!-- Lista de enlaces -->
+        <!-- Links list -->
 
-        <li><a href="index.html#inicio">Inicio</a></li>
-        <li><a href="index.html#proyectos">Proyectos</a></li>
-        <li><a href="index.html#galeria">Galería</a></li>
+        <li><a href="index.html#inicio">Home</a></li>
+        <li><a href="index.html#proyectos">Projects</a></li>
+        <li><a href="index.html#galeria">Gallery</a></li>
 
-        <!-- Página actual destacada -->
-        <li><a href="mascotas.html" style="color:var(--clr-accent)">Mascotas</a></li>
+        <!-- Current page highlighted -->
+        <li><a href="pets.html" style="color:var(--clr-accent)">Pets</a></li>
 
-        <li><a href="index.html#contacto">Contacto</a></li>
+        <li><a href="index.html#contacto">Contact</a></li>
       </ul>
     </nav>
 
-    <!-- Botón hamburguesa (solo visible en móvil con CSS) -->
-    <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+    <!-- Hamburger button (visible only on mobile with CSS) -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
       <span></span><span></span><span></span>
-      <!-- Cada span es una línea del icono -->
+      <!-- Each span is a line of the icon -->
     </button>
   </header>
 
-  <!-- ================= CONTENIDO PRINCIPAL ================= -->
+  <!-- ================= MAIN CONTENT ================= -->
   <main>
 
     <section class="section" style="padding-top:9rem">
-      <!-- Sección principal -->
+      <!-- Main section -->
 
       <header class="section-header">
-        <!-- Encabezado -->
-        <h2>Mis <em>Mascotas</em></h2>
+        <!-- Header -->
+        <h2>My <em>Pets</em></h2>
       </header>
 
-      <!-- GRID DE TARJETAS -->
+      <!-- CARDS GRID -->
       <section class="mascotas-grid">
 
-        <!-- TARJETA 1 -->
         <article class="mascota-card">
           <span class="mascota-emoji">🐕</span>
           <h3>Bush</h3>
-          <p>Labrador tiene mas de 3 años.</p>
+          <p>Labrador, over 3 years old.</p>
         </article>
 
-        <!-- TARJETA 2 -->
         <article class="mascota-card">
           <span class="mascota-emoji">🐈</span>
           <h3>Luna</h3>
-          <p>Gata siamesa de 5 años.</p>
+          <p>5-year-old Siamese cat.</p>
         </article>
 
-        <!-- TARJETA 3 -->
         <article class="mascota-card">
           <span class="mascota-emoji">🐇</span>
           <h3>Buni</h3>
-          <p>Conejo enano de 1 año.</p>
+          <p>1-year-old dwarf rabbit.</p>
         </article>
 
-        <!-- TARJETA 4 -->
         <article class="mascota-card">
           <span class="mascota-emoji">🦊</span>
           <h3>Blaze</h3>
-          <p>Zorro cariñoso.</p>
+          <p>Friendly fox.</p>
         </article>
 
-        <!-- TARJETA 5 -->
         <article class="mascota-card">
           <span class="mascota-emoji">🦥</span>
-          <h3>Oso perezoso</h3>
-          <p>Oso en modo descanso.</p>
+          <h3>Sloth</h3>
+          <p>Always in rest mode.</p>
         </article>
 
-        <!-- TARJETA 6 -->
         <article class="mascota-card">
           <span class="mascota-emoji">🦦</span>
-          <h3>Nutria</h3>
-          <p>Mamífero acuático.</p>
+          <h3>Otter</h3>
+          <p>Aquatic mammal.</p>
         </article>
 
       </section>
@@ -128,14 +120,13 @@
   <footer class="footer">
     <p>
       © CesarJvm · 
-      <a href="index.html" style="color:var(--clr-accent)">Volver al inicio</a>
+      <a href="index.html" style="color:var(--clr-accent)">Back to home</a>
     </p>
   </footer>
 
   <!-- ================= JAVASCRIPT ================= -->
   <script defer src="js/script.js"></script>
-  <!-- Script del menú hamburguesa -->
+  <!-- Hamburger menu script -->
 
 </body>
 </html>
-```

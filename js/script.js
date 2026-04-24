@@ -1,10 +1,9 @@
-alert("Bienvenido a mi Portafolio")
-
+alert("Welcome to my Portfolio");
 
 /* ----------------------------------------
-    TOGGLE DE CONTENIDO — "Ver más sobre mí"
-      Cambia el texto del botón y muestra/oculta
-   ---------------------------------------- */
+   CONTENT TOGGLE — "See more about me"
+   Changes button text and shows/hides content
+---------------------------------------- */
 function toggleContent() {
     const extra = document.getElementById('extraContent');
     const btn = document.getElementById('toggleBtn');
@@ -15,24 +14,21 @@ function toggleContent() {
 
     if (isHidden) {
         extra.classList.remove('hidden');
-        btn.textContent = 'Ocultar información';
+        btn.textContent = 'Hide information';
         btn.style.background = 'var(--clr-muted)';
     } else {
         extra.classList.add('hidden');
-        btn.textContent = 'Ver más sobre mí';
+        btn.textContent = 'See more about me';
         btn.style.background = 'var(--clr-accent)';
         btn.style.color = '#0a0a0f';
     }
 }
-// Seleccionar elementos
+
+// Select elements
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.querySelector(".nav-links");
 
-// Evento click
+// Click event
 menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
-
-
-
-
